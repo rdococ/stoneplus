@@ -55,7 +55,21 @@ minetest.register_node("stoneplus:cobbled_basalt", {
 })
 minetest.register_node("stoneplus:basalt_brick", {
 	description = S("Basalt Brick"),
-	tiles = {{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2}},
+	tiles = {
+		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick_alt.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick_alt.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
+	},
+	groups = {cracky = 1, stone = 1},
+	legacy_mineral = true,
+	sounds = default.node_sound_stone_defaults(),
+})
+minetest.register_node("stoneplus:basalt_block", {
+	description = S("Basalt Block"),
+	tiles = {"stoneplus_basalt_block.png"},
 	groups = {cracky = 1, stone = 1},
 	legacy_mineral = true,
 	sounds = default.node_sound_stone_defaults(),
@@ -110,6 +124,14 @@ minetest.register_craft {
 	recipe = {
 		{"stoneplus:limestone"},
 		{"stoneplus:limestone"}
+	},
+}
+minetest.register_craft {
+	output = "stoneplus:basalt_block 9",
+	recipe = {
+		{"stoneplus:basalt", "stoneplus:basalt", "stoneplus:basalt"},
+		{"stoneplus:basalt", "stoneplus:basalt", "stoneplus:basalt"},
+		{"stoneplus:basalt", "stoneplus:basalt", "stoneplus:basalt"},
 	},
 }
 

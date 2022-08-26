@@ -28,10 +28,11 @@ end
 
 register("limestone", "Limestone", {cracky = 3})
 register("cobbled_limestone", "Cobbled Limestone", {cracky = 3})
-register("limestone_brick", "Limestone Brick", {cracky = 1})
+register("limestone_brick", "Limestone Brick", {cracky = 2})
 
-register("cobbled_basalt", "Cobbled Basalt", {cracky = 3})
-register("basalt_brick", "Basalt Brick", {cracky = 2})
+register("cobbled_basalt", "Cobbled Basalt", {cracky = 2})
+register("basalt_brick", "Basalt Brick", {cracky = 1})
+register("basalt_block", "Basalt Block", {cracky = 1})
 
 register("slate", "Slate", {cracky = 3})
 register("cobbled_slate", "Cobbled Slate", {cracky = 3})
