@@ -22,7 +22,14 @@ minetest.register_node("stoneplus:cobbled_limestone", {
 })
 minetest.register_node("stoneplus:limestone_brick", {
 	description = S("Limestone Brick"),
-	tiles = {{name = "stoneplus_limestone_brick.png", align_style = "world", scale = 2}},
+	tiles = {
+		{name = "stoneplus_limestone_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_limestone_brick_alt.png", align_style = "world", scale = 2},
+		{name = "stoneplus_limestone_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_limestone_brick_alt.png", align_style = "world", scale = 2},
+		{name = "stoneplus_limestone_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_limestone_brick_alt.png", align_style = "world", scale = 2},
+	},
 	groups = {cracky = 2, stone = 1},
 	legacy_mineral = true,
 	sounds = default.node_sound_stone_defaults(),
@@ -57,11 +64,11 @@ minetest.register_node("stoneplus:basalt_brick", {
 	description = S("Basalt Brick"),
 	tiles = {
 		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
-		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
-		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
-		{name = "stoneplus_basalt_brick_alt.png", align_style = "world", scale = 2},
 		{name = "stoneplus_basalt_brick_alt.png", align_style = "world", scale = 2},
 		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick_alt.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick.png", align_style = "world", scale = 2},
+		{name = "stoneplus_basalt_brick_alt.png", align_style = "world", scale = 2},
 	},
 	groups = {cracky = 1, stone = 1},
 	legacy_mineral = true,
